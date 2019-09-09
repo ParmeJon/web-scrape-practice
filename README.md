@@ -19,3 +19,8 @@ npm install
 ```
 node index.js
 ```
+
+### Blogged while doing this
+Here it is: 
+
+https://medium.com/@jonathansychan/web-scraping-in-node-6ce8e17a8643

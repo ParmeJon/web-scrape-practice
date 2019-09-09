@@ -1,5 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
+const fs = require('fs')
 
 const url = "https://www.thefactsite.com/top-100-random-funny-facts/";
 
@@ -18,5 +19,7 @@ let getData = html => {
         data.push({fact: $(elem).text(),
         description: $(elem).next().next().text()})
     })
-    console.log(data)
+    const jsonData = {data}
+    const jsonString = JSON.stringify(jsonData)
+    fs.writeFileSync("./output/factsAndDescriptions.json", jsonString, 'utf8')
 }
