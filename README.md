@@ -1,5 +1,6 @@
 # Web Scraping with Node 
 Here is my first time web scraping. Thought I should see first hand how it is.
+In this project I webscrape facts and output them in a JSON file.
 
 ## Packages Used
  - Axios 
